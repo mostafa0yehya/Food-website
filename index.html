@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidebar d-flex flex-row-reverse">
+      <div class="nav-head p-2 py-3">
+        <div class="logo">
+          <img src="./images/logo (1).png" alt="" />
+        </div>
+        <div class="icon" id="btnClose">
+          <span class="fs-1 menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="d-none close">
+            <i class="fa-solid fa-xmark fs-1"></i
+          ></span>
+        </div>
+        <div>
+          <span class="d-block py-2"> <i class="fa-solid fa-globe"></i></span>
+          <span class="d-block py-2">
+            <i class="fa-solid fa-share-nodes"></i>
+          </span>
+        </div>
+      </div>
+      <div
+        class="content side-hidden d-flex flex-column justify-content-between h-100 p-4"
+      >
+        <ul>
+          <li class="py-2">
+            <a class="fs-6 text-capitalize" id="search" href="#">search</a>
+          </li>
+          <li class="py-2">
+            <a class="fs-6 text-capitalize" id="cat" href="#">categories </a>
+          </li>
+          <li class="py-2">
+            <a class="fs-6 text-capitalize" id="area" href="#">area</a>
+          </li>
+          <li class="py-2">
+            <a class="fs-6 text-capitalize" id="ing" href="#">ingredients</a>
+          </li>
+          <li class="py-2">
+            <a class="fs-6 text-capitalize" id="cont" href="#">contact us</a>
+          </li>
+        </ul>
+        <footer>
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+        </footer>
+      </div>
+    </div>
+    <div class="main position-relative">
+      <div class="load">
+        <span class="loader"></span>
+      </div>
+      <div class="container">
+        <div class="contact hide-section vh-100 section">
+          <div class="w-75 mx-auto d-flex align-items-center h-100">
+            <form id="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      placeholder="Enter Your Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Enter Your Phone Number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputAge"
+                      placeholder="Enter Your Age"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword"
+                      placeholder="Enter Your Password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputRePassword"
+                      placeholder="Re-enter Password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button
+                    type="submit"
+                    class="btn submit-btn btn-outline-danger w-auto mx-auto"
+                    id="submitBtn"
+                    disabled
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="categories hide-section section my-5">
+          <div class="container">
+            <div class="row g-4"></div>
+          </div>
+        </div>
+        <div class="areas hide-section section my-5">
+          <div class="continer">
+            <div class="row g-4"></div>
+          </div>
+        </div>
+        <div class="ingredients hide-section section my-5">
+          <div class="continer">
+            <div class="row g-4"></div>
+          </div>
+        </div>
+        <div class="meals hide-section section my-5">
+          <div class="continer">
+            <div class="row g-4"></div>
+          </div>
+        </div>
+
+        <div class="meal hide-section section my-5">
+          <div class="continer">
+            <div class="row h-100 g-4"></div>
+          </div>
+        </div>
+
+        <div class="hide-section section my-5 search-res">
+          <form action="#">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    id="byName"
+                    class="form-control search"
+                    placeholder="Search By Name"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    id="byFirst"
+                    class="form-control search"
+                    placeholder="Search By First Letter"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="res">
+            <div class="continer">
+              <div class="row g-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>
