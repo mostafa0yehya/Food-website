@@ -135,7 +135,7 @@ async function getMeals(id = "") {
   addLoad();
   try {
     let url = id
-      ? `https://www.themealdb.com/api/json/v1/1/filter.php?s=${id}`
+      ? `https://www.themealdb.com/api/json/v1/1/filter.php?c=${id}`
       : "https://www.themealdb.com/api/json/v1/1/search.php?s=";
     let data = await getData(url);
     data = data.meals.slice(0, 20);
